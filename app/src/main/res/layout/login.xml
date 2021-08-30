@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Session.Login"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="208dp"
+        android:layout_height="227dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ripetizioni" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_textInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_margin="30dp"
+        app:hintTextColor="@color/blu_500">
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColorLink="@color/blu_500"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_textInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:hintTextColor="@color/blu_500"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/blu_500"
+        android:text="Log in"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPPURE"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/buttonRegistrati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="registrati"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/blu_500"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/buttonsenzaRegistrazione"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="Login senza registrazione" />
+
+
+</LinearLayout>
